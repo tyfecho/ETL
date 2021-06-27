@@ -1,0 +1,18 @@
+version: '3'
+services:
+  crawler-python3:
+    build: .
+    volumes: 
+      - .:/crawler
+    command: ['python', 'main.py']
+    env_file: .env
+    #depends_on:
+      #- splash
+    #volumes:
+    #  - ~/.aws/:/root/.aws:ro
+
+  # REFER TO : https://github.com/scrapinghub/splash
+  #splash:
+    #image: scrapinghub/splash
+    #ports: 
+      #- 8050:8050
