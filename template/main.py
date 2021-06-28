@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 
 if __name__ == '__main__':
+    # this originates from the .env file
     country = os.environ.get('COUNTRY')
 
     # If both print none, you werent able to get the ENV variables
